@@ -1,6 +1,9 @@
-#Comprobar si un número es palíndromo
+#Generar los cuadrados de los números desde 1 hasta m
 import os
 os.system("cls")
 
-def
-print(nume_palindromo(154))
+def squares(m):
+    if m == 0:
+        return[]
+    return squares(m - 1) + [m * m]
+print(squares(6))   #salida [1, 4, 9, 16, 25. 36]
